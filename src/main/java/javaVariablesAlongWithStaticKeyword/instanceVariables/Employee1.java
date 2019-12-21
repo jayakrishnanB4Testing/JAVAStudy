@@ -2,7 +2,7 @@ package javaVariablesAlongWithStaticKeyword.instanceVariables;
 
 public class Employee1 {
 
-    String companyName = "Accenture";
+    static String companyName = "Accenture";
     String firstName;
     int empId;
 

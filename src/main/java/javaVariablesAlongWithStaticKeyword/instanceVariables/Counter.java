@@ -1,10 +1,10 @@
 package javaVariablesAlongWithStaticKeyword.instanceVariables;
 
-public class Counter1 {
+public class Counter {
 
-    static int counter = 0;
+    int counter = 0;
 
-    public Counter1(){
+    public Counter(){
         counter++;
         System.out.println("Count: " + counter);
     }

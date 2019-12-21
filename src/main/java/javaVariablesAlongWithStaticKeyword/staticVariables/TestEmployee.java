@@ -1,4 +1,4 @@
-package javaVariablesAlongWithStaticKeyword.instanceVariables;
+package javaVariablesAlongWithStaticKeyword.staticVariables;
 
 public class TestEmployee {
 
@@ -9,7 +9,7 @@ public class TestEmployee {
         E1.displayEmployeeDetails();
         E2.displayEmployeeDetails();
 
-        Employee.companyName = "KPMG";
+        E1.companyName = "KPMG";
 
         E1.displayEmployeeDetails();
         E2.displayEmployeeDetails();

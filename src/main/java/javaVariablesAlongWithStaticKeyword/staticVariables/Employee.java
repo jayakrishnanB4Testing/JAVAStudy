@@ -1,8 +1,8 @@
-package javaVariablesAlongWithStaticKeyword.instanceVariables;
+package javaVariablesAlongWithStaticKeyword.staticVariables;
 
 public class Employee {
 
-    static String companyName = "Accenture";
+    String companyName = "Accenture";
     String firstName;
     int empId;
 
