@@ -1,4 +1,4 @@
-package oopsconcepts;
+package oopsconcepts.classes;
 
 public class Car {
 

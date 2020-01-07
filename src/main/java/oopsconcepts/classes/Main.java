@@ -1,4 +1,6 @@
-package oopsconcepts;
+package oopsconcepts.classes;
+
+import oopsconcepts.classes.Car;
 
 public class Main {
 
