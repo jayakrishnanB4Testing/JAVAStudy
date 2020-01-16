@@ -31,5 +31,6 @@ public class ForLoopDayOfTheWeekChallenge {
         } else {
             System.out.println("Error: Invalid day");
         }
+
     }
 }
