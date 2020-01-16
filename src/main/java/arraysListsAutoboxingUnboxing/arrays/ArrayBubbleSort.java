@@ -1,5 +1,7 @@
 package arraysListsAutoboxingUnboxing.arrays;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ArrayBubbleSort {
@@ -8,9 +10,8 @@ public class ArrayBubbleSort {
 
     public static void main(String[] args) {
 
-        System.out.println("Enter the size of the array: ");
-        int arrSize = scanner.nextInt();
-        int[] arr = getArray(arrSize);
+
+        int[] arr = getArray();
         arr = arraySortAscending(arr);
         printArray(arr);
         arr = arraySortDescending(arr);
@@ -18,28 +19,18 @@ public class ArrayBubbleSort {
 
     }
 
-    public static int[] getArray(int size) {
-        int[] arr = new int[size];
-        for (int i = 0; i < size; i++) {
+    public static int[] getArray() {
+        System.out.println("Enter the size of the array: ");
+        int arrSize = scanner.nextInt();
+        int[] arr = new int[arrSize];
+        for (int i = 0; i < arrSize; i++) {
             arr[i] = scanner.nextInt();
         }
         return arr;
     }
 
     public static void printArray(int[] arr) {
-        String array = "";
-        for (int i = 0; i < arr.length; i++) {
-            if (i == 0) {
-                array += "{" + arr[i] + ", ";
-            }
-            else if (i == arr.length-1) {
-                array += arr[i] + "}";
-            }
-            else {
-                array += arr[i] + ", ";
-            }
-        }
-        System.out.println(array);
+        System.out.println(Arrays.toString(arr));
     }
 
     public static int[] arraySortAscending(int[] arr) {
