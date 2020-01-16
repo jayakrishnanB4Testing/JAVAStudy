@@ -2,18 +2,23 @@ package oopsconcepts.compositionChallenge;
 
 public class Room {
 
-    private SwitchBoard switchBoard;
+    private Clock clock;
+    private TV TV;
 
-    public Room(SwitchBoard switchBoard) {
-        this.switchBoard = switchBoard;
+    public Room(Clock clock, TV oneplusTV) {
+        this.clock = clock;
+        this.TV = oneplusTV;
     }
 
-    private SwitchBoard getSwitchBoard() {
-        return switchBoard;
+    private Clock getClock() {
+        return clock;
     }
 
-    public void switchOn(){
-        switchBoard.getaSwitch().turnOnSwitch();
+    public void displayCurrentTime(){
+        System.out.println(clock.getTime());
     }
 
+    private TV TV() {
+        return TV;
+    }
 }
